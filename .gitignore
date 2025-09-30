@@ -1,0 +1,42 @@
+# -------------------------
+# 👩‍💻 Python
+# -------------------------
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.env.*
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# SQLite or local DB files
+*.db
+*.sqlite
+
+# -------------------------
+# 💻 VS Code
+# -------------------------
+.vscode/
+*.code-workspace
+
+# -------------------------
+# 🖼️ Outputs / Logs
+# -------------------------
+outputs/
+logs/
+*.log
+
+# -------------------------
+# 🍏 macOS
+# -------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
