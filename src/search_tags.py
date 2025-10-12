@@ -13,16 +13,20 @@ with open(TAG_FILE, "r") as f:
 
 print(f"✅ Loaded {len(tags)} tags from {TAG_FILE}\n")
 
-# ✅ 3️⃣ Ask user for a keyword
-keyword = input("🔍 Enter keyword to search in tags: ").strip().lower()
+# ✅ 3️⃣ Ask user for one or more keywords (comma-separated)
+keywords_input = input("🔍 Enter keywords (comma-separated): ").strip().lower()
+keywords = [kw.strip() for kw in keywords_input.split(",") if kw.strip()]
 
-# ✅ 4️⃣ Filter tags
-matches = [tag for tag in tags if keyword in tag.lower()]
-
-# ✅ 5️⃣ Show results
-if matches:
-    print(f"\n📊 Found {len(matches)} matching tags for keyword '{keyword}':\n")
-    for tag in matches:
-        print("-", tag)
-else:
-    print(f"\n⚠️ No tags found for keyword '{keyword}'")
+# ✅ 4️⃣ Search each keyword
+for keyword in keywords:
+    matches = [tag for tag in tags if keyword in tag.lower()]
+    
+    print("\n" + "="*80)
+    print(f"🔍 Keyword: '{keyword}'")
+    if matches:
+        print(f"📊 Found {len(matches)} matching tags:\n")
+        for tag in matches:
+            print("-", tag)
+    else:
+        print(f"⚠️ No tags found for keyword '{keyword}'")
+print("="*80)
