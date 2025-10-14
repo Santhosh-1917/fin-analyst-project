@@ -124,6 +124,59 @@ fin_analyst_project/
 
 ---
 
+## 🗄️ PostgreSQL Integration  
+
+This project integrates a **PostgreSQL 14** database for structured financial analytics.  
+
+### 🧱 Database Schema  
+Three main tables form the star schema:  
+- **dim_company** — company metadata (name, ticker, sector)  
+- **dim_date** — time dimension for analysis (year, month, quarter)  
+- **fact_financials** — financial facts loaded from processed CSV files  
+
+### ⚙️ Setup & Load  
+1. **Create database**
+   ```bash
+   createdb fin_analytics
+   ```
+2. **Run schema**
+   ```bash
+   psql -d fin_analytics -f sql/schema_only_dump.sql
+   ```
+3. **Load data**
+   ```bash
+   python src/load_to_postgres.py
+   ```
+4. **Verify**
+   ```bash
+   psql -d fin_analytics -c "\dt"
+   ```
+
+### 🧾 Schema Export  
+The current schema was exported for reproducibility:  
+```bash
+pg_dump -s fin_analytics > sql/schema_only_dump.sql
+```
+
+### 📊 Example Join Query  
+```sql
+SELECT 
+    d.year,
+    d.month_name,
+    ROUND(SUM(f.net_income)/1e9, 2) AS net_income_billion,
+    ROUND(SUM(f.operating_expenses)/1e9, 2) AS op_exp_billion,
+    ROUND(SUM(f.rd_expense)/1e9, 2) AS rnd_billion
+FROM fact_financials f
+JOIN dim_date d ON f.full_date = d.full_date
+GROUP BY d.year, d.month_name
+ORDER BY d.year, MIN(d.month);
+```
+
+✅ **Successfully loaded 62 records for Apple Inc.**  
+✅ **Schema and scripts allow easy extension to other companies.**
+
+---
+
 ## 👤 Author  
 **Santhosh Narayanan**  
 > Financial Data Analyst | Python & SQL Enthusiast | Data Visualization Specialist  
