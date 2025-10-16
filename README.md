@@ -135,13 +135,14 @@ VALUES
 ---
 
 ## 🗓️ Project Timeline
+
 | Phase | Status | Key Deliverables |
-|:--|:--|:--|:--|
-| **Phase 1 – Data Extraction & Cleaning** | ✅ Done | API integration, missing-value interpolation |
-| **Phase 2 – SQL Modeling & Integration** | ✅ Done | Star schema + loaded Apple dataset |
-| **Phase 3 – Power BI Integration** | ✅ Done | Interactive visuals + KPI model |
-| **Phase 4 – Advanced SQL & Forecasting** | 🔄 Ongoing | CTEs, window functions, Prophet/ARIMA |
-| **Phase 5 – Automation & Scaling** | 🔜 Planned | Multi-company ETL + stored procedures |
+|:--|:--:|:--|
+| **Phase 1 – Data Extraction & Cleaning** | ✅ Done | API integration, missing‑value interpolation |
+| **Phase 2 – SQL Modeling & Integration** | ✅ Done | Star schema + loaded Apple dataset |
+| **Phase 3 – Power BI Integration** | ✅ Done | Interactive visuals + KPI model |
+| **Phase 4 – Advanced SQL & Forecasting** | 🔄 Ongoing | CTEs, window functions, Prophet/ARIMA |
+| **Phase 5 – Automation & Scaling** | 🔜 Planned | Multi‑company ETL + stored procedures |
 
 ---
 
