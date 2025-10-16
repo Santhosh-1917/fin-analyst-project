@@ -22,7 +22,7 @@ It automates **data extraction**, **cleaning**, **SQL integration**, and **Power
 - **Languages:** Python, SQL  
 - **Libraries:** Pandas, Matplotlib, Seaborn, Prophet, ARIMA  
 - **Database:** PostgreSQL 14  
-- **Visualization:** Power BI (Windows VM)  
+- **Visualization:** Power BI (Windows VM), Tableau  
 - **API Source:** SEC EDGAR (XBRL data)
 
 ---
@@ -93,6 +93,8 @@ Visuals include:
 - **Assets vs Liabilities Analysis**
 - **R&D & Operating Expense Trends**
 - **Company-level slicers and date filters**
+
+> Tableau is also used for comparative dashboards and public visualization of forecast results, enabling interactive sharing and broader accessibility of key financial insights.
 
 ---
 
