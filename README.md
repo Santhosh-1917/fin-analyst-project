@@ -135,7 +135,7 @@ VALUES
 ---
 
 ## 🗓️ Project Timeline
-| Phase | Duration | Status | Key Deliverables |
+| Phase | Status | Key Deliverables |
 |:--|:--|:--|:--|
 | **Phase 1 – Data Extraction & Cleaning** | ✅ Done | API integration, missing-value interpolation |
 | **Phase 2 – SQL Modeling & Integration** | ✅ Done | Star schema + loaded Apple dataset |
