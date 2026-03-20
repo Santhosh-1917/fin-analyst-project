@@ -105,7 +105,7 @@ Visuals include:
  - **Cash Flow by Activity**
  - **Interactive year filters and KPI cards for financial performance analysis**
 
-**Tableau was used to build an interactive Apple financial performance dashboard focused on profitability, liquidity, and cash flow trends from 2010–2025, complementing the Power BI implementation with a public-facing and presentation-friendly analytics layer**
+Tableau was used to build an interactive Apple financial performance dashboard focused on profitability, liquidity, and cash flow trends from 2010–2025, complementing the Power BI implementation with a public-facing and presentation-friendly analytics layer
 
 ---
 
