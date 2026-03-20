@@ -94,7 +94,18 @@ Visuals include:
 - **R&D & Operating Expense Trends**
 - **Company-level slicers and date filters**
 
-> Tableau is also used for comparative dashboards and public visualization of forecast results, enabling interactive sharing and broader accessibility of key financial insights.
+## 📊 Tableau Dashboard
+![Apple Financial Performance Dashboard](dashboard/Performance%20Dashboard%20Image.png)
+
+
+Visuals include:
+ - **Quarterly Gross Profit Trend**
+ - **Gross Profit by Quarter-End Month**
+ - **Current Assets vs Current Liabilities**
+ - **Cash Flow by Activity**
+ - **Interactive year filters and KPI cards for financial performance analysis**
+
+**Tableau was used to build an interactive Apple financial performance dashboard focused on profitability, liquidity, and cash flow trends from 2010–2025, complementing the Power BI implementation with a public-facing and presentation-friendly analytics layer**
 
 ---
 
@@ -164,11 +175,11 @@ ORDER BY c.company_name, d.fiscal_year;
 
 ## 🎯 Outcomes
 - Full ETL + analytics pipeline built for **Apple Inc.** (2010–2025).  
-- SQL-based KPIs integrated seamlessly into **Power BI**.  
+- SQL-based KPIs integrated seamlessly into **Power BI & Tableau** .  
 - Ready for multi-company scaling and predictive analytics.  
 
 ---
 
 ## 👤 Author
 **Santhosh Narayanan**  
-> Financial Data Analyst | Python & SQL Enthusiast | Power BI Developer  
+> Financial Data Analyst | Python & SQL Enthusiast | Power BI & Tableau Developer  
